@@ -30,8 +30,7 @@ public class BuildPyramid : MonoBehaviour
             {
                 Instantiate(cube, new Vector3(x, y, i), Quaternion.identity);
                 Instantiate(cube, new Vector3(x, y, -i), Quaternion.identity);
-            } 
-            
+            }
         }
     }
 
@@ -57,7 +56,7 @@ public class BuildPyramid : MonoBehaviour
     public void Start()
     {
         Instantiate(cube, new Vector3(0, amountLevel, 0f), Quaternion.identity);
-        PyramideWithoutInside();
+        Pyramide();
     }
 
    
